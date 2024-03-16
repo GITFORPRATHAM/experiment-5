@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+ class demo
+{public:
+    
+     static int x,y;
+    static int z;
+    double get_data(int a, int b)
+    {
+        x=a;
+        y=b;
+        z=z+1;
+    }
+
+    static void add_number()
+    {
+        int j;
+        j=x+y;
+        cout<<j;
+    }
+      static double display_data()
+    {
+        cout<<z;
+    }
+};
+int demo::z;
+int demo::x;
+int demo::y;
+
+
+int main()
+{
+    demo ob,ob1,ob2,ob3,ob4;
+    ob.get_data(2,3); 
+    ob1.get_data(5,4);
+    ob2.get_data(4,6);
+    ob3.get_data(5,6);
+    ob4.get_data(8,7);
+     
+    ob.display_data();
+    ob1.display_data();
+    ob2.display_data();
+    ob3.display_data();
+    ob4.display_data();
+    
+
+    ob.add_number();
+    ob1.add_number();
+    ob2.add_number();
+    ob3.add_number();
+    ob4.add_number();
+    
+
+
+    return 0;
+
+}
+
